@@ -2,7 +2,7 @@ import { Server } from "socket.io";
 
 const io = new Server({
   cors: {
-    origin: "http://localhost:5173",
+    origin: "http://localhost:5174",
   },
 });
 
@@ -36,4 +36,6 @@ io.on("connection", (socket) => {
   });
 });
 
-io.listen("4000");
+io.listen("4000",()=>{
+  console.log("Server Started at port 4000")
+});
