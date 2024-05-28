@@ -36,6 +36,4 @@ io.on("connection", (socket) => {
   });
 });
 
-io.listen("4000",()=>{
-  console.log("Server Started at port 4000")
-});
+io.listen("4000");
